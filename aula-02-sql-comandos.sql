@@ -60,28 +60,29 @@ RETURNING *;
 
 
 -- Inserindo dados na tabela 'livros'
-INSERT INTO livros
+INSERT INTO livros 
 	(titulo, isbn, codigo, ano, paginas, categoria_id, editora_id)
 VALUES 
-  ('Jane Austen', 'jane.austen@gmail.com', '(92) 3709-1345')
+	('Orgulho e Preconceito', '978-8544001820', '8544001823', 2018, 424, 1, 1),
 	('Razão e sensibilidade', '978-6555520712', '655552071', 2020, 288, 1, 1),
-  ('Persuasão', '978-6550970277', '655097027', 2019, 240, 1, 2),
-  ('Todas as suas (im)perfeições', '978-8501117687', '8501117684', 2019, 304, 1, 3),
-  ('Para todos os garotos que já amei', '978-8580577266', '8580577268', 2015, 320, 1, 4),
-  ('Como eu era antes de você', '978-8580579246', '8580579244', 2016, 320, 1, 4),
-  ('Eragon', '9788532518484', '8532518486', 2005, 468, 2, 5),
-  ('Trono de vidro', '978-8501401380', '8501401382', 2013, 392, 2, 3),
-  ('Academia de vampiros', '978-8501401380', '6555112875', 2022, 448, 2, 6),
-  ('Um mistério no Caribe', '978-8595085909', '8595085900', 2020, 208, 3, 6),
-  ('Duna', '978-8576573135', '857657313', 2017, 680, 3, 7),
-  ('A hipótese do amor','9786555653304','6555653302', 2022, 336, 1,8)
+	('Persuasão', '978-6550970277', '655097027', 2019, 240, 1, 2),
+	('Todas as suas (im)perfeições', '978-8501117687', '8501117684', 2019, 304, 1, 3),
+	('Para todos os garotos que já amei', '978-8580577266', '8580577268', 2015, 320, 1, 4),
+	('Como eu era antes de você', '978-8580579246', '8580579244', 2016, 320, 1, 4),
+	('Eragon', '9788532518484', '8532518486', 2005, 468, 2, 5),
+	('Trono de vidro', '978-8501401380', '8501401382', 2013, 392, 2, 3),
+	('Academia de vampiros', '978-8501401380', '6555112875', 2022, 448, 2, 6),
+	('Um mistério no Caribe', '978-8595085909', '8595085900', 2020, 208, 3, 6),
+	('Duna', '978-8576573135', '857657313', 2017, 680, 3, 7),
+	('A hipótese do amor','9786555653304','6555653302', 2022, 336, 1,8)
 RETURNING *;
 
 
 -- Inserindo dados na tabela de relacionamento 'autores_livros'
-INSERT INTO autores_livros 
-	(autor_id, livros_id)	
-VALUES 
+INSERT INTO autores_livros
+	(autor_id, livros_id)
+VALUES
+	(1,1),
 	(1,2),
 	(1,3),
 	(2,4),
@@ -92,7 +93,7 @@ VALUES
 	(7,9),
 	(8,10),
 	(9,11),
-  (10,12)
+    (10,12)
 RETURNING *;
 
 
