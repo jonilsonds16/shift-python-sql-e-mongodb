@@ -1,4 +1,4 @@
-```json
+```
 db.editoras.insert([
     {_id:9, nome:"Seguinte", endereco: "Travessa Antônio Ferreira, 125 - Igrejinha / Capanema - PA 68700216", telefone:"(58) 92587-5686"}, 
     {_id:10, nome:"Paralela", endereco: "Rua Frederico Moura, 37 - Cidade Nova / Franca - SP 14401150", telefone:"(52) 92035-3387"}    

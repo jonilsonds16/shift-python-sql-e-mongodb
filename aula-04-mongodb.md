@@ -1,4 +1,4 @@
-```json
+```
 // Listando banco de dados
 show dbs
 
