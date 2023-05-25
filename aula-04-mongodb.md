@@ -1,3 +1,4 @@
+```json
 // Listando banco de dados
 show dbs
 
@@ -160,3 +161,4 @@ db.livros.aggregate([{
         as:"autor"
     }}
 ])
+```
